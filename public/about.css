@@ -1,0 +1,589 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdf1;
+    color: #39442b;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #fdfdf1;
+    padding: 20px 40px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 100;
+    width: calc(100% - 80px);
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #39442b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #39442b;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+    color: #fdfdf1;
+    border-bottom: 2px solid #39442b;
+    background-color: #39442b;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid #39442b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #39442b;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #39442b;
+    color: #fdfdf1;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('pottery.jpeg'); /* Use the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+.subtext {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #39442b;
+    color: #fdfdf1;
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #fdfdf1;
+    color: #39442b;
+    border: 2px solid #39442b;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #394a32; /* Adjusted to match the background color in your example */
+}
+
+
+
+.collage-section{
+    background-color:  #fdfdf1;
+    
+}
+
+.text-content h1{
+    color: #394a32;
+}
+
+
+section {
+    padding: 20px;
+    background-color: #394a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Adjusted width for the slideshow within the section */
+    height: 400px;
+    position: relative;
+}
+
+.slideshow-slide {
+    min-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.slideshow-slide img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%; /* Creates the oval shape */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200%); } /* Shift left by 200% to loop through 6 images */
+}
+
+.slideshow-container {
+    display: flex;
+    animation: slide -10s linear infinite; /* 20s for a slower continuous effect */
+}
+
+
+
+
+
+
+/* Data Into Action Section */
+.data-action {
+    background-color: #fdfdf1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.data-action h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.data-action .italic {
+    font-style: italic;
+}
+
+.data-action p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.data-action-images {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.data-action-images img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.image1{
+    height: 450px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+
+.image2{
+   
+    margin-top: 250px;
+    border-radius: 10px;
+}
+
+.image3{
+    
+    height: 350px;
+    
+    
+
+}
+
+
+.range-rover-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "image1 image2"
+        "title title"
+        "image3 image4";
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.range-rover-section .image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 500px; /* Ensures visibility on small screens */
+}
+
+.range-rover-section .image1 {
+    grid-area: image1;
+    background-image: url('infogrpah7.jpeg');
+    width: 70%;
+    height: 70%;
+}
+
+.range-rover-section .image2 {
+    grid-area: image2;
+    background-image: url('infogrpah4.jpeg');
+    width: 70%;
+    height: 70%;
+}
+
+.range-rover-section .title {
+    grid-area: title;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #b3b3b3;
+}
+
+.range-rover-section .image3 {
+    grid-area: image3;
+    background-image: url('infograph1.jpeg');
+}
+
+.range-rover-section .image4 {
+    grid-area: image4;
+    background-image: url('infograph6.jpeg');
+}
+
+
+
+
+
+.heva-life {
+    background-color: #fdfdf1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.heva-life h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.heva-life .life-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.heva-life .life-text {
+    max-width: 500px;
+}
+
+.heva-life .life-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.heva-life .life-text ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.heva-life .life-text ol li {
+    background-color: #e5e5d8;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sectionlife-img{
+width: 300px;
+height: 450px;
+border-radius: 20px;
+}
+
+
+
+.empowerher-story .story-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-right: 5px;
+    margin-top: -600px;
+    
+}
+
+.empowerher-story .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
+
+.empowerher-story .image-box img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.empowerher-story .quote-box {
+    position: relative;
+    background-color: #ffeb3b;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 30px;
+}
+
+.empowerher-story .quote-box::before {
+    content: open-quote;
+    font-size: 40px;
+    color: #444;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+.empowerher-story .quote-box::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid #ffeb3b;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.empowerher-story .quote-box p:last-child::after {
+    content: close-quote;
+    font-size: 40px;
+    color: #444;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+}
+
+
+.collage-section {
+    text-align: center;
+    color:  #fdfdf1;
+
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fdfdf1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    background-color: #39442b;
+    margin: 10px auto;
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #39442b;
+    position: absolute;
+    right: -15px;
+    top: -13px;
+    clip-path: circle(50%);
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* the empowerher story 2*/
+
+.story-container1 {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-right: 5px;
+    margin-top: 600px;
+    
+}
+
+.empowerher-story .image-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
+
+.empowerher-story .image-box1 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.empowerher-story .quote-box1 {
+    position: relative;
+    background-color: #ffeb3b;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 30px;
+    
+}
+
+.empowerher-story .quote-box1::before {
+    content: open-quote;
+    font-size: 40px;
+    color: #444;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+}
+
+.empowerher-story .quote-box1::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid #ffeb3b;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.empowerher-story .quote-box1 p:last-child::after {
+    content: close-quote;
+    font-size: 40px;
+    color: #444;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+}
+
+
+
+.aboutlast{
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+    background: black;
+}
+.aboutlast h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.aboutlast p1{
+    word-spacing: 10px;
+    font-size: 10px;
+    color: #777;
+    width: 110%;
+}
+.icons .fa{
+    font-size: large;
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+
+
+

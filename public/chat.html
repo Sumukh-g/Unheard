@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer Anonymous Chat</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar Section -->
+<header>
+    <nav>
+        <div class="logo">EmpowerHer</div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="chat.html">Chat with us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <a href="#get-started" class="cta-button">Get Started</a>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="subtext">Heva delivers custom, connected wellness journeys. Witness your progress and plot new goals as you up-level your health.</p>
+        <a href="#start" class="start-button">Start Today</a>
+    </div>
+</section>
+
+<!-- Chat Section -->
+<section id="chat-container">
+    <div id="messages"></div>
+    <div id="input-container">
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <button id="send-btn">Send</button>
+    </div>
+</section>
+
+<section class="aboutlast">
+    <h3>About Us</h3>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-linkedin" ></i>
+        <i class="fa fa-pinterest" ></i>
+        <i class="fa fa-youtube" ></i>
+    </div>
+    <p>
+        © 2024 UN-HEARD
+    
+    </p>
+    <p1>	CONTACT    CAREER    MEDIA    LEGAL-NOTICE    UK-MODERN-SLAVERY-ACT    CODE-OF-CONDUCT    DATA-PROTECTION-NOTICE    COOKIES-SETTINGS</p1>
+</section>
+
+
+<script>
+    const messagesContainer = document.getElementById('messages');
+    const inputField = document.getElementById('message-input');
+    const sendButton = document.getElementById('send-btn');
+
+    function addMessage(text, sender = 'sent') {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${sender}`;
+        messageDiv.innerText = text;
+        messagesContainer.appendChild(messageDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    sendButton.addEventListener('click', () => {
+        const message = inputField.value.trim();
+        if (message) {
+            addMessage(message, 'sent');
+            saveMessage(message, 'sent');
+            inputField.value = '';
+        }
+    });
+
+    function saveMessage(text, sender) {
+        fetch('/save-message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text, sender }),
+        }).catch(error => console.error('Error saving message:', error));
+    }
+
+    async function loadMessages() {
+        try {
+            const response = await fetch('/get-messages');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const messages = await response.json();
+            messages.forEach(message => addMessage(message.text, message.sender));
+        } catch (error) {
+            console.error('Error loading messages:', error);
+        }
+    }
+
+    // Load all messages when the page loads
+    loadMessages();
+</script>
+
+
+</body>
+</html>

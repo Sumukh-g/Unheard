@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/**the styling of the background of the webpage**/
+.background{
+    width: 90%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0.75),(0,0,0.75));
+    background-image: url(blackhak\ \(1\).png);
+    padding-left: 10%;
+    background-size: cover;
+    background-position: center;
+    position: relative  ;
+}
+.register{
+    font-weight: 500;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px 28px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.conatiner{
+    width:10%;
+    margin: 0 auto;
+}
+header{
+    bottom: 20px;
+    background-size: 30%;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/**the stylong and psotionf of the logo**/
+.logo{
+    width: 170px;
+    cursor: pointer;
+    background-color: rgb(207, 188, 188);
+    background: transparent;
+    border-radius:  20%;
+    background-image: opacity;
+}
+/** the styling and postiong of the navbar**/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #a2ece5;
+    display: block;
+    position: absolute;
+    margin: auto;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/** the styling and postioning of the text in the center of the webpage**/
+.text-box{
+    width: 90%;
+    color: #fff;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .text-box h1{
+     font-size: 50px;
+     color: black;
+ 
+ }
+ .text-box p{
+     margin: 10px 0 40px ;
+     font-size: 20px;
+     color: #000000;
+ }
+ .explore{
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     border: 1px solid white;
+     padding: 12px 34px;
+     font-size: 15px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+ 
+ }
+ nav .fa{ 
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .navbar ul li{
+        display: block;
+
+    }
+    .navbar ul li{
+        position: absolute;
+        background: #1d5933;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .navbar ul{
+      padding: 25px;  
+    }
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/** the styling and positiong of the heading in the next section**/
+.sometext h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/** the styiling and positioning of the image and text**/
+.textimg1 {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+  }
+  
+  .textimg1 img {
+    margin-right: 10px; /* Adjust the margin as needed */
+    width: 50%;
+  }
+  .textimg2 {
+    overflow: hidden; /* Clear the float */
+  }
+  
+  .right-content {
+    float: left;
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 180px;
+    margin-top: 80px;
+}
+.right-content h2{
+    font-size: 40px;
+    font-family: PT serif;
+    font-weight: 400 ;
+    font-weight: normal;
+}
+.right-content p{
+    font-size: 20px;
+    font-family: PT serif;
+    font-weight: 400 ;
+    font-weight: normal;
+    top: 70px;
+
+   padding-bottom: 2%;
+}
+  .right-image {
+    float: right;
+    margin-left: 10px; /* Adjust the margin as needed */
+    width: 50%;
+}
+  .text12 p{
+    font-family: montserrat;
+    color: 5f626c;
+    padding-top: 0;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.learn{ 
+    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 10%;
+}
+.text12 h1{
+    font-size: 40px;
+    font-family: PT serif;
+    font-weight: 400 ;
+    font-weight: normal;
+    top: 70px;
+   padding-left: 15%;
+   padding-bottom: 2%;
+}
+/** the styling of the end of the page(about us)**/
+ .aboutlast{
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+    background: black;
+}
+.aboutlast h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.aboutlast p{
+    color: #777;
+}
+.aboutlast p1{
+    word-spacing: 10px;
+    font-size: 12px;
+    color: #777;
+    width: 110%;
+}
+.icons .fa{
+    font-size: large;
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+

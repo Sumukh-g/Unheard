@@ -1,0 +1,214 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdf1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #fdfdf1;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 100;
+    width: calc(100% - 80px);
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #39442b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #39442b;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+    color: #fdfdf1;
+    border-bottom: 2px solid #39442b;
+    background-color: #39442b;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid #39442b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #39442b;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #39442b;
+    color: #fdfdf1;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('type23.jpeg'); /* Use the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+.subtext {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #39442b;
+    color: #fdfdf1;
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #fdfdf1;
+    color: #39442b;
+    border: 2px solid #39442b;
+}
+
+/* Chat Section */
+#chat-container {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #fdfdf1;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #39442b;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.received {
+    background-color: #d3d3d3;
+    color: #39442b;
+    align-self: flex-start;
+}
+
+#input-container {
+    display: flex;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #39442b;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-btn {
+    padding: 10px;
+    background-color: #39442b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #2f3b23;
+}
+
+/* Footer Section */
+.aboutlast {
+    text-align: center;
+    padding: 50px;
+    background-color: #39442b;
+    color: #fdfdf1;
+}
+
+.aboutlast .icons i {
+    color: #fdfdf1;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.aboutlast .icons i:hover {
+    color: #2f3b23;
+}
+
+.aboutlast p {
+    margin: 10px 0;
+    color: black;
+}
+
+.aboutlast p1 {
+    font-size: 14px;
+    color: #d3d3d3;
+}

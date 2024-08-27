@@ -1,0 +1,357 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdf1;
+    color: #39442b;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #fdfdf1;
+    padding: 20px 40px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 100;
+    width: calc(100% - 80px);
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #39442b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #39442b;
+    font-weight: normal;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+    color: #fdfdf1;
+    border-bottom: 2px solid #39442b;
+    background-color: #39442b;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid #39442b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #39442b;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #39442b;
+    color: #fdfdf1;
+}
+
+.logo2{
+    height: 70px;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('WhatsApp\ Image\ 2024-08-24\ at\ 5.04.48\ PM.jpeg'); /* Use the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+.subtext {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 20px;
+   margin-left: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: #39442b;
+    color: #fdfdf1;
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #fdfdf1;
+    color: #39442b;
+    border: 2px solid #39442b;
+}
+
+/* Data Into Action Section */
+.data-action {
+    background-color: #fdfdf1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.data-action h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.data-action .italic {
+    font-style: italic;
+}
+
+.data-action p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.data-action-images {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.data-action-images img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.image1{
+    height: 450px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+
+.image2{
+   
+    margin-top: 250px;
+    border-radius: 10px;
+}
+
+.image3{
+    
+    height: 350px;
+    
+    border-radius: 10px;
+
+}
+/* Custom Wellness Section */
+.custom-wellness {
+    background-color: #39442b;
+    color: #fdfdf1;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-wellness .text-content {
+    max-width: 500px;
+}
+
+.custom-wellness .text-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.custom-wellness .text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.custom-wellness .visual-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Heva Life Section */
+.heva-life {
+    background-color: #fdfdf1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.heva-life h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.heva-life .life-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.heva-life .life-text {
+    max-width: 500px;
+}
+
+.heva-life .life-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.heva-life .life-text ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.heva-life .life-text ol li {
+    background-color: #e5e5d8;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sectionlife-img{
+width: 300px;
+height: 450px;
+border-radius: 20px;
+}
+/* FAQ Section */
+ /* FAQ Section */
+ .faq {
+    background-color: #f0e79c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item button {
+    width: 100%;
+    background-color: #f0e79c;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #39442b;
+    cursor: pointer;
+    border-bottom: 1px solid #39442b;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item button:hover {
+    background-color: #39442b;
+    color: #ffffff;
+}
+
+.faq-item button:after {
+    content: '\002B'; /* Unicode character for plus sign */
+    float: right;
+    font-size: 24px;
+}
+
+.faq-item button.active:after {
+    content: '\2212'; /* Unicode character for minus sign */
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color:#f0e79c;
+    padding: 0 10px;
+}
+
+.faq-content p {
+    padding: 10px 0;
+}
+
+
+
+
+/* Styling of the of the last about us */
+.aboutlast{
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+    background: black;
+}
+.aboutlast h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.aboutlast p1{
+    word-spacing: 10px;
+    font-size: 10px;
+    color: #777;
+    width: 110%;
+}
+.icons .fa{
+    font-size: large;
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+
+

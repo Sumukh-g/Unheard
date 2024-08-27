@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerHer</title>
+    <link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav>
+            <div class="logo">EmpowerHer</div>
+            <ul class="nav-links">
+				<li><a href="homepage html.html">Home</a></li>
+                <li><a href="chat.html">CHat with us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </nav>
+    </header>
+
+  
+
+
+
+    <!-- Hero Section -->
+    <div class="container">
+        <img src="multiracial-group-people-background.png" alt="Example Image" class="image">
+        <div class="text-behind">Support</div>
+    </div>
+    
+
+
+    <section class="full-page-section">
+        <div class="top-buttons">
+            <a href="#" class="btn"><img src="facebook-img.svg" alt="Facebook"></a>
+            <a href="#" class="btn"><img src="linkdin-img.svg" alt="LinkedIn"></a>
+            <a href="#" class="btn"><img src="insta-sp.svg" alt="Instagram"></a>
+        </div>
+    
+        <div class="image-container">
+            <img src="socialmedia-back.jpeg" alt="Full Background Image" class="full-image">
+            <button class="jump-button">Press Space to jump</button>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- Heva Life Section -->
+    <section id="heva-life" class="heva-life">
+        <h2>Live the <span class="italic">Heva Life</span></h2>
+        <div class="life-content">
+            <img src="section-life.jpg" alt="Heva Life Image" class="sectionlife-img">
+            <div class="life-text">
+                <p>When you're living and loving your new normal, we're here to support and enhance it. And we're here when you're ready for your next level of health and happiness (and the next). Feeling good should be an ever-expanding journey.</p>
+                <ol>
+                    <li>Pick your wellness path and get all your questions answered</li>
+                    <li>Tell us a little about your health factors</li>
+                    <li>Heva providers will review your profile and assemble your unique treatment plan</li>
+                    <li>We'll get you started right away</li>
+                    <li>You'll have a wealth of health support all along the way</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+  
+	<section class="aboutlast">
+		<h3>About Us</h3>
+		<div class="icons">
+			<i class="fa fa-facebook" ></i>
+			<i class="fa fa-instagram" ></i>
+			<i class="fa fa-twitter" ></i>
+			<i class="fa fa-linkedin" ></i>
+			<i class="fa fa-pinterest" ></i>
+			<i class="fa fa-youtube" ></i>
+		</div>
+		<p>
+			© 2024 UN-HEARD
+		
+		</p>
+		<p1>	CONTACT    CAREER    MEDIA    LEGAL-NOTICE    UK-MODERN-SLAVERY-ACT    CODE-OF-CONDUCT    DATA-PROTECTION-NOTICE    COOKIES-SETTINGS</p1>
+	</section>
+
+
+	<script>
+		// JavaScript for FAQ toggle
+		document.querySelectorAll('.faq-item button').forEach(button => {
+			button.addEventListener('click', () => {
+				const faqContent = button.nextElementSibling;
+	
+				// Toggle the active class on the button
+				button.classList.toggle('active');
+	
+				// If the button is active, expand the corresponding content
+				if (button.classList.contains('active')) {
+					faqContent.style.maxHeight = faqContent.scrollHeight + 'px';
+				} else {
+					// Otherwise, collapse the content
+					faqContent.style.maxHeight = 0;
+				}
+	
+				// Close all other open FAQs
+				document.querySelectorAll('.faq-item button').forEach(otherButton => {
+					if (otherButton !== button && otherButton.classList.contains('active')) {
+						otherButton.classList.remove('active');
+						otherButton.nextElementSibling.style.maxHeight = 0;
+					}
+				});
+			});
+		});
+	</script>
+	
+</body>
+
+</html>
